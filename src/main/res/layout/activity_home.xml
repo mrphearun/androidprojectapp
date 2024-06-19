@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <!-- RecyclerView for Product Cards -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/productRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="200dp"
+        tools:listitem="@layout/item_product_card" />
+
+    <!-- Banner ImageView -->
+    <ImageView
+        android:id="@+id/bannerImageView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/banner_image"
+        android:contentDescription="@string/banner_desc"
+        android:layout_gravity="top" />
+
+    <!-- Popular Product TextView with Background -->
+    <TextView
+        android:id="@+id/popularTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:text="Popular Products"
+        android:fontFamily="sans-serif-condensed"
+        android:background="@drawable/background_popular_text"
+        android:layout_gravity="top"
+        android:layout_marginTop="150dp" />
+</FrameLayout>

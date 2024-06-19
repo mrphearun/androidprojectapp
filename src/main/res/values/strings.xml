@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CampingGearApp</string>
+    <string name="banner_desc">Promotional banner</string>
+        <!-- Add other string resources as needed -->
+</resources>
